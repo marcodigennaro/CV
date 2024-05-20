@@ -1,0 +1,415 @@
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{
+	left=1.25cm,
+	right=1.25cm,
+	top=1.3cm,
+	bottom=1.2cm,
+	columnsep=1.cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{fancyhdr}
+\usepackage{eurosym}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\colorlet{accent}{blue!70!black}
+\colorlet{heading}{blue!70!black}
+\colorlet{emphasis}{black}
+\colorlet{body}{black!80!white}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\Large\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+%\renewcommand{\itemmarker}{{\small\textbullet}}
+%\renewcommand{\ratingmarker}{\faCircle}
+
+\begin{document}
+
+\name{\bigskip Marco Di Gennaro | PhD\smallskip}
+%\tagline{Quantum + Data + Materials Science = Materials Informatics | Ph.D. \smallskip}
+\tagline{Freelance Data Scientist with >10 years of R\&D experience}
+
+\personalinfo{%
+\bigskip
+\begin{tabular}{p{3cm}p{4.5cm}p{3cm}}
+\location{Bruxelles (BE)}  &
+\email{mdg@atomistic-modelling.com} &
+%\faResearchgate \href{https://www.researchgate.net/profile/Marco_Di_Gennaro}{Marco\url{_}Di\url{_}Gennaro}\\
+\faLinkedin \href{https://www.linkedin.com/in/marcodig/}{marcodig}\\
+
+\phone{+32485185559}&
+\homepage{atomistic-modelling.com}&
+\faGithub \href{https://github.com/marcodigennaro}{marcodigennaro} 
+
+%\hspace{0.08cm}\raisebox{-.2\height}{\includegraphics[width=0.02\columnwidth]{orcid}}\hspace{0.1cm}\href{https://orcid.org/0000-0001-5734-5155}{orcid [0000-0001-5734-5155]} &
+%\hspace{0.05cm}\raisebox{-.2\height}{\includegraphics[width=0.02\columnwidth]{X}}\hspace{0.1cm}\href{https://twitter.com/mdg_qmatinfo}{mdg\_qmatinfo} 
+\end{tabular}
+}
+
+%% You can add multiple photos on the left or right
+\photoR{4cm}{pic_new}
+
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+\makecvheader
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.66}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+%% LEFT COLUMN START
+
+\cvsection{ Work Experience}
+
+\myevent{Founder \& Freelance consultant}{Atom}{Mar 2023 -- Present}{Bruxelles (Be)}
+\begin{itemize}
+\item Established a SME specialised in machine learning \& materials simulation
+\item Derived data-driven models in material research for energy applications
+\item Managed operations and strategic planning, financial strategies
+\item Cultivated partnerships within industrial and academic sectors
+\item Analytical and numerical techniques to extract insight in automotive
+\item Associated Partner in the  \href{https://euspeclab.cnrs.fr/}{\underline{\emph{EUSpecLab}}}: ML techniques for  spectroscopy
+\end{itemize}
+\divider
+
+\myevent{Machine Learning Scientist}{Toyota Motor Europe}{Jun 2018 -- May 2023}{Bruxelles (Be)}
+\begin{itemize}
+\item Integrated simulations and machine learning in nano-materials research
+\item Delivered data-driven decision-making in multidisciplinary research projects
+\item Directed strategic research initiatives, employing Toyota’s principles 
+\item Developed and distributed  several python packages for materials science
+%\item Enhanced team productivity through of data-driven approach
+\item Delivered training programs in python and machine learning
+\item Demonstrated the use of quantum computing in material science
+\item Demonstrated proficiency in securing and managing EU/HPC resources
+\item Participated in the recruitment process and training of students
+\end{itemize}
+\divider
+
+\myevent{Freelance Project Manager EU Projects}{Pin Bike}{Jan 2021 -- Jun 2021}{Corato (It)}
+\begin{itemize}
+\item \href{https://bicification-project.eu/}{\underline{Bicification}} EIT urban mobility project: pitch competition, budget negotiations ($\sim$\euro{300K}), partnership agreements and recruitment.
+\end{itemize}
+\divider
+
+\myevent{Invited Fellow}{IPAM - UCLA}{Sep 2017 -- Dec 2020}{Los Angeles (USA)}
+\begin{itemize}
+\item Long research program: \href{https://www.ipam.ucla.edu/programs/long-programs/complex-high-dimensional-energy-landscapes/}{\underline{Complex High-Dimensional Energy Landscapes}}
+\item Engaged in applied mathematics \& multi-disciplinary team work
+\end{itemize}
+\divider
+
+\myevent{Research Assistant}{University of Basel}{Aug 2016 -- May 2018}{Basel (CH)}
+\begin{itemize}
+\item Integrated theoretical chemistry and machine learning%, achieved data driven prediction of electronic properties properties.
+\item Managed multiple projects with a focus on strategic prioritisation%, bridging team communication gaps
+\item Organising Committee: \href{https://postdocretreat.biozentrum.unibas.ch/?page_id=1677}{\underline{\emph{The 2017 Basel Postdoctoral Network Retreat}}}
+%\item Lab assistant - Infrared (IR) Spectroscopy 
+\end{itemize}
+\divider
+
+\myevent{Scientific Collaborator}{University of Liege}{Sep 2015 -- Dec 2022}{Liege (Be)}
+\begin{itemize}
+%\item Drove the advancement in the study of fundamental interactions affecting material properties
+\item Provided new insights into temperature-dependent material behaviour
+%\item Expertise in harmonising theoretical predictions with experimental data
+%\item Grant Management: 
+\end{itemize}
+\divider
+
+\myevent{PhD Student (FRIA-FNRS personal grant)}{Li\`ege University - Nanomat}{Mar 2011 -- Aug 2015}{Liege (Be)} 
+\begin{itemize}
+\item Project management: running research grant of \euro{10k} over 4 years
+%Modelling temperature-dependent magnetic effects 
+\item Research in computational solid state physics: Quantum transport, Spintronics, nano-devices, modelling of complex phenomena
+%\item Software development in \href{https://www.abinit.org}{\underline{ABINIT}}
+\item Visiting student at The University of Texas at Austin (USA)
+\end{itemize}
+%\divider
+
+%\newpage
+\cvsection{Projects}
+
+\myproject{ML for Spectroscopy}{Atom \& EUSpecLab}{Sep 2022 -- Feb 2024}
+\begin{itemize}
+\item Application of ML Canonical Sampling in MoSx bi-layer materials 
+\item Application of DNN methods to predict IR spectra of Cu clusters
+\item ML interatomic potentials for transport quantities of Si nanolayers
+\end{itemize}
+\divider
+
+\myproject{Batteries}{Toyota Motor Europe \& Atom}{Sep 2020 -- Feb 2024}
+\begin{itemize}
+\item Electrothermal simulations to understand battery stack for automotive
+\item Transport properties of Li-O2 electrolysers by MD and ML models
+\item Benchmark of ML Interatomic Potentials and classical force fields % (\color{red}{: network based and GAN models}) 
+%\item Model to compare theoretical viscosity to measured leakage over 1000 different polymeric electrolysers 
+\item Active Learning prediction of polymeric electrolysers degradation
+\end{itemize}
+\divider
+
+\myproject{Fuel cells}{Toyota Motor Europe \& Atom}{Sep 2019 -- Feb 2024}
+\begin{itemize}
+\item Application-driven material design for thermodynamical H$_2$ storage
+\item Developed a suite of workflows to manage vast amount of simulations
+\item Simulated $\sim$1M nano-structures for room temperature absorption
+\item Computational pipeline to simulate $\sim$150k Metal Organic Frameworks
+\item Feature Selection \& Genetic Algorithm for H$_2$ adsorption into crystals 
+\item Calculated stress-strain resistance of carbon nano tubes and enhanced resistance with cross-functional linking for high pressure H$_2$ storage
+\item Post DFT methods to design semiconductor for water photo-catalysis 
+\end{itemize}
+\divider
+
+\myproject{Gas exhaust catalysis}{Toyota Motor Europe}{Sep 2021 -- Sep 2023}
+\begin{itemize}
+\item Clustering model to translate over 1M chemical hydrocarbon reactions into simplified (5-10), efficient model for human analysis
+\end{itemize}
+\divider
+
+\myproject{Lubricants}{Toyota Motor Europe}{Jun 2018 -- Aug 2021}
+\begin{itemize}
+\item Explained tribological macroscopic effects from molecular interactions
+\item Benchmark of several physics-inspired ML models, Feature Selection
+\end{itemize}
+\divider
+
+\myproject{\href{https://www.ipam.ucla.edu/programs/long-programs/complex-high-dimensional-energy-landscapes/}{\underline{\emph{Energy Landscapes}}}}{IPAM}{Sep 2017 -- Dec 2020}
+\begin{itemize}
+\item Bayesian optimisation for fast geometry optimisation in DFT
+\item DCNN recognition of molecular interaction from electronic structure
+\end{itemize}
+\divider
+
+\myproject{\href{https://nccr-marvel.ch/}{\underline{\emph{NCCR MARVEL}}}}{UBasel}{Aug 2016 -- May 2018}
+\begin{itemize}
+\item Machine Learning of electronic-structure materials properties
+\item QMAT-X: a reference database for crystallographic Machine Learning 
+%\item Kernel Ridge Regression analysis of chemical compound space
+\item Feature Analysis and Algorithms benchmark (KRR, RF) for Quantum ML
+\end{itemize}
+\divider
+
+\myproject{Spin-Caloritronics materials}{ULiege}{Sep 2011 -- Apr 2020}
+\begin{itemize}
+\item Ab-initio study of electron--phonon coupling in metals
+\item Temperature dependence of spin-wave propagation stiffness
+\item Interaction of magnetic and vibrational perturbations in materials 
+\end{itemize}
+\divider
+
+\myproject{The \href{https://www.abinit.org}{\underline{\emph{ABINIT}}} software package}{ULiege}{Sep 2011 -- Dec 2015}
+\begin{itemize}
+\item Collaborated with a global team to an open-source software package
+\item Parallelisation of phonon calculations on independent k-points
+\item Analysis and verification to ensure versions consistency
+\end{itemize}
+\divider
+ 
+\myproject{High-pressure phase transitions}{ULiege}{Mar 2011 -- Dec 2011} 
+\begin{itemize}
+\item Explained unusual crystallographic phase transition of Calcium via DFT
+\end{itemize}
+\divider
+
+\myproject{Spin Glasses for frustrated systems}{UBari}{Mar 2010 -- Sep 2010} 
+\begin{itemize}
+\item Analytical method to calculate free energy of frustrated systems 
+\end{itemize}
+%\divider
+
+ %% LEFT COLUMN ENDS
+\switchcolumn
+
+\cvsection{Hard skills}
+
+\cvtag{R\&D}
+\cvtag{Big Data}
+\cvtag{Machine Learning}
+\cvtag{AI}
+\cvtag{B2B}
+\cvtag{Pipelines}
+\cvtag{Data Science}
+\cvtag{Algorithms}
+\cvtag{Modelling}
+\cvtag{Data Analysis}
+\cvtag{Statistical Analysis}
+\cvtag{ETL}
+\cvtag{EDA}
+\cvtag{Data Visualisation}
+\cvtag{Optimisation}
+\cvtag{High Performance Computing}\\
+\cvtag{Software Development}
+\cvtag{Python}
+\cvtag{Pandas}
+\cvtag{Numpy}
+\cvtag{Scipy}
+\cvtag{Pydantic}
+\cvtag{ScikitLearn}
+\cvtag{Neural Networks}
+\cvtag{C++}
+\cvtag{Bash}
+\cvtag{Databases}
+\cvtag{MongoDB}
+\cvtag{SQL}
+\cvtag{Git \& Version Control}
+\cvtag{CI/CD}
+\cvtag{Cloud Computing}
+\cvtag{GCP}
+\cvtag{AWS}
+\cvtag{Multiscale Simulations}
+\cvtag{DFT}
+\cvtag{MD}
+\cvtag{Monte Carlo}
+\cvtag{Quantum Computing}
+\cvtag{Time Series Analysis}
+\cvtag{Forecasting}
+\cvtag{Computer Vision}
+\cvtag{Numerical Methods}
+\cvtag{Energy Materials}
+\cvtag{Automotive}
+
+
+\cvsection{Soft Skills}
+\cvtag{Dynamic}
+\cvtag{Target oriented}
+\cvtag{Flexible}\\
+\cvtag{Analytical thinking}
+\cvtag{Problem solving}
+\cvtag{Attention to details}
+\cvtag{Team work}
+\cvtag{Abstraction}
+\cvtag{Passion}
+\cvtag{Commitment}
+%\cvtag{Coordination}
+\cvtag{Supervision}
+\cvtag{Reliable}
+\cvtag{Leadership}
+\cvtag{Time Management}
+\cvtag{Communication}
+\cvtag{Rigorous}
+\cvtag{Versatile}
+\cvtag{Storytelling}
+\cvtag{Divulgation}
+\cvtag{Proof of Concepts}
+
+
+\cvsection{Languages}
+\cvskill{Italian - Native}{5}
+\cvskill{English}{5}
+\cvskill{French}{5}
+\cvskill{Spanish}{3}
+\cvskill{German}{2}
+\cvskill{Dutch}{1}
+\cvskill{Portuguese}{1}
+
+\newpage
+
+\cvsection{Referees}
+\begin{itemize}
+\item Dr. Konstantinos Gkagkas \hfill \href{mailto:konstantinos.gkagkas@toyota-europe.com}{\faEnvelope}
+\item[] Manager, Toyota Motor Europe 
+\item Prof. Anatole von Lilienfeld\hfill \href{mailto:anatole.vonlilienfeld@utoronto.ca}{\faEnvelope}
+\item[] Lab head: \href{https://chemspacelab.chem.utoronto.ca}{\underline{Chemspacelab}}
+\item Prof. Matthieu Verstraete \hfill \href{mailto:Matthieu.Verstraete@uliege.be}{\faEnvelope}
+\item[] Ph.D. supervisor, ULiege
+\item[] Lab head: \href{http://www.nanomat.ulg.ac.be/}{\underline{Nanomat}}
+\end{itemize}
+
+
+\cvsection{Certificates}{
+\begin{itemize}
+\item Introduction to MongoDB \hfill2020
+\item Linux admin \hfill2019
+\item Introduction to SQL \hfill2018
+
+\end{itemize}
+}
+
+\cvsection{Publications}
+\begin{enumerate}
+\item \href{https://iopscience.iop.org/article/10.1088/1367-2630/accca1/meta}{New Journal of Physics \textbf{25}, 2023}
+\item \href{https://pubs.rsc.org/en/content/articlelanding/2022/gc/d2gc01567f/unauth}{Green Chem. \textbf{24}, 2022}
+\item \href{https://www.sciencedirect.com/science/article/abs/pii/S0360319921021716?via\%3Dihub}{Int. J. Hydrog \textbf{021}, 27612, 2021}
+\item \href{https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.155128}{Phys. Rev. B \textbf{102}, 155128, 2020}
+\item \href{https://link.aps.org/doi/10.1103/PhysRevB.97.214417}{Phys. Rev. B \textbf{97}, 214417, 2018}
+\item \href{http://www.ipam.ucla.edu/wp-content/uploads/2018/10/Energy-Landscapes-2017-White-Paper.pdf}{Complex Energy Landscapes, 2017}
+\item \href{https://www.sciencedirect.com/science/article/pii/S0010465516300923}{Com. Phys. Comm. \textbf{205}, 106, 2016}
+\item \href{https://link.aps.org/doi/10.1103/PhysRevLett.111.025503}{Phys. Rev. Lett. \textbf{111}, 2013}
+\end{enumerate}
+
+\cvsection{Education}
+
+\begin{itemize}
+
+\item PhD Computational Physics\hfill 2015
+\item[] Liege University (Be)
+
+\item Visiting PhD student \hfill 2013
+\item[] Austin University (TX/USA)
+
+\item MS Theoretical Physics\hfill 2010
+\item[] Bari University (It) %\hfill 110/110 %{cum laude}   
+%\item[] \href{http://cdlfbari.cloud.ba.infn.it/wp-content/uploads/file-manager/CIF/Magistrale/Tesi\%20di\%20laurea/09-10-DI\%20GENNARO\%20Marco.pdf}{\underline{Replica Trick in a finite size spin glass}}
+%\item[] Random Matrices in Statistical Physics
+
+\item BS General Physics\hfill 2008
+\item[] Bari University (It)  %\hfill 110/110  
+%\item[] \href{http://cdlfbari.cloud.ba.infn.it/wp-content/uploads/file-manager/CIF/Triennale/Tesi\%20di\%20laurea/08-09-DIGENNARO\%20Marco.pdf}{\underline{L'evoluzione simulata: vita artificiale}}
+%\item[] \href{http://cdlfbari.cloud.ba.infn.it/wp-content/uploads/file-manager/CIF/Triennale/Tesi\%20di\%20laurea/08-09-DIGENNARO\%20Marco.pdf}{\underline{algoritmi genetici}}
+
+\item Erasmus project \hfill 2008
+\item[] Sorbonne University/CNRS (Fr)
+%\item[] Sorbonne University/CNRS $\cdot$ Introduction \`a la m\'ethode Monte Carlo% - Exemples de simulation num\'erique en physique statistique et en dynamique d’interaction des \'electrons dans la mati\'ere
+\item Liceo scientifico \hfill 2005
+\item[] Ruvo di Puglia (It) %\hfill 95/100
+
+\end{itemize}
+
+\cvsection{Awards}{
+\begin{itemize}
+\item Finalist MT180 \hfill2015
+\item FWB travel research grant \hfill2013
+\item FRIA research fellowship \hfill2011
+\item MS Committee award \hfill2010
+
+\end{itemize}}
+
+\cvsection{LEISURES activities}
+\begin{itemize}
+\item Ultimate frisbee, rock climbing
+\item Social dance: Lindy Hop
+\item Outdoor activities: bicycling, hiking 
+\item Language tandem, Chess
+\end{itemize}
+
+\end{paracol}
+
+
+\end{document}
